@@ -27,13 +27,30 @@ var NAVTREE =
   [ "My Doxygen demo", "index.html", [
     [ "Welcome to Doxygen Demo", "md_readme.html", [
       [ "Markdown support", "md_readme.html#autotoc_md1", null ]
+    ] ],
+    [ "Welcome to Doxygen Demo", "md_src_readme2.html", [
+      [ "Markdown support", "md_src_readme2.html#autotoc_md3", null ]
+    ] ],
+    [ "Modules", "modules.html", "modules" ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

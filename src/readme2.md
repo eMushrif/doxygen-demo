@@ -13,8 +13,6 @@ You can preview the output of this project from this link, and it would be a goo
 ## Markdown support
 
 <@ref myClass> myClass
-@ref src/readme2.md
+@ref readme.md
 @ref my-group
 \@ref somethhing
-
-![enter image description here](Owl.jpg)
