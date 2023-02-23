@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Doxygen demo: Welcome to Doxygen Demo</title>
+<title>My Doxygen demo: Vehicle Monitoring</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,6 +27,7 @@
   <td id="projectalign">
    <div id="projectname">My Doxygen demo
    </div>
+   <div id="projectbrief">A sample project with Doxygen documentation</div>
   </td>
  </tr>
  </tbody>
@@ -63,7 +64,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md_readme.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('group__vehicle-mon.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,21 +89,30 @@ $(document).ready(function(){initNavTree('md_readme.html',''); initResizable(); 
 </div>
 </div>
 
-<div><div class="header">
-  <div class="headertitle"><div class="title">Welcome to Doxygen Demo </div></div>
+<div class="header">
+  <div class="summary">
+<a href="#groups">Modules</a>  </div>
+  <div class="headertitle"><div class="title">Vehicle Monitoring</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This is a sample project to show how to use <a href="https://www.doxygen.nl/">Doxygen</a> for code documentation.</p>
-<p>Doxygen is a tool to generate documentation viewable as webpage by extracting comments from the your code.</p>
-<p>Doxygen is an app that can be <a href="https://www.doxygen.nl/manual/install.html">installed</a> on your device and it works by adding a configuration file (<code>Doxyfile</code>) in your project and running it using <code>doxygen -g</code> command to generate the documentation, or using <a href="https://www.doxygen.nl/manual/doxywizard_usage.html">Doxywizard UI</a> that comes with the software.</p>
-<p>Normally, you wouldn't have to manipulate Doxygen configurations or learn about them. But as a developer, you would need to learn the right syntax that would make your code comments understandable for Doxygen and enables it to generate documentation.</p>
-<p>You can preview the output of this project from this link, and it would be a good idea to compare the script/code in the repository to see how script is translated into documentation.</p>
-<h1><a class="anchor" id="autotoc_md1"></a>
-Markdown support</h1>
-<p>&lt;<a class="el" href="classmy_class.html">myClass</a>&gt; <a class="el" href="classmy_class.html" title="This is a description of the class the can be placed anywhere, not necessarily before the class decla...">myClass</a> <a class="el" href="md_src_readme2.html">Welcome to Doxygen Demo</a> <a class="el" href="group__my-group.html">Some Group</a> @ref somethhing</p>
-<p><img src="Owl.jpg" alt="enter image description here" class="inline"/> </p>
-</div></div><!-- contents -->
-</div><!-- PageDoc -->
+
+<p>Vehicle status information collection and manipulation.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
+Modules</h2></td></tr>
+<tr class="memitem:group__accident"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__accident.html">Accident Detection</a></td></tr>
+<tr class="memdesc:group__accident"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accident detection events module. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Vehicle status information collection and manipulation. </p>
+<p>This module provides tools for monitoring the vehicle. This includes:</p><ol type="1">
+<li>Location tracking</li>
+<li>Fuel consumption</li>
+<li>Health status </li>
+</ol>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
