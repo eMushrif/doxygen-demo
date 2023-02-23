@@ -25,15 +25,42 @@
 var NAVTREE =
 [
   [ "My Doxygen demo", "index.html", [
-    [ "Welcome to Doxygen Demo", "md_readme.html", [
-      [ "Markdown support", "md_readme.html#autotoc_md1", null ]
+    [ "Welcome to Doxygen Demo", "md__readme.html", [
+      [ "Generating documentation", "md__readme.html#autotoc_md1", null ],
+      [ "Documenting the code", "md__readme.html#autotoc_md2", [
+        [ "Modules and groups", "md__readme.html#autotoc_md3", null ]
+      ] ],
+      [ "Markdown support", "md__readme.html#autotoc_md4", null ]
+    ] ],
+    [ "Vehicle Monitoring", "md_doc_vehicle_monitor.html", [
+      [ "Accident detection", "md_doc_vehicle_monitor.html#autotoc_md6", null ],
+      [ "Positioning", "md_doc_vehicle_monitor.html#autotoc_md7", null ],
+      [ "Vehicle diagnostics", "md_doc_vehicle_monitor.html#autotoc_md8", null ]
+    ] ],
+    [ "Modules", "modules.html", "modules" ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"accident-detection_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
