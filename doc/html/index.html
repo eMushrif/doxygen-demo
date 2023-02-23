@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Doxygen demo: Main Page</title>
+<title>My Doxygen demo: My Doxygen demo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,10 +89,90 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">My Doxygen demo Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">My Doxygen demo </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md4"></a>
+Welcome to Doxygen Demo</h1>
+<p>This is a sample project to show how to use <a href="https://www.doxygen.nl/">Doxygen</a> for code documentation.</p>
+<p>Doxygen is a tool to generate documentation viewable as webpage by extracting comments from the your code.</p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Generating documentation</h2>
+<p>Doxygen is an app that can be <a href="https://www.doxygen.nl/manual/install.html">installed</a> on your device and it works by adding a configuration file (<code>Doxyfile</code>) in your project and running it using <code>doxygen -g</code> command to generate the documentation, or using <a href="https://www.doxygen.nl/manual/doxywizard_usage.html">Doxywizard UI</a> that comes with the software.</p>
+<p>For this project, documentation is generated already, to view the webpage go to <code>/doc/html/index.html</code>. it would be a good idea to compare the script/code in the repository to see how script is translated into html documentation.</p>
+<p>Feel free to play around with the script and <code>.md</code> files to see how it is reflected on documentation. If you make any changes, you need to regenerate the docs by using Doxywizard:</p><ol type="1">
+<li>Open Doxywizard</li>
+<li>Go to File &gt; Open</li>
+<li>Select <code>Doxygenfile</code> inside this repository and open it.</li>
+<li>Go to Run tab and click "Run doxygen"</li>
+</ol>
+<p>Normally, you wouldn't have to manipulate Doxygen configurations or learn about them. But as a developer, you would need to learn the right syntax that would make your code comments syntax understandable for Doxygen and enables it to generate documentation.</p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Documenting the code</h2>
+<p>Please explore the files in <code>src/</code> and checkout the <code>Modules</code> section on the left pane of this page.</p>
+<p>Through exploration, you should learn few key syntaxes:</p><ol type="1">
+<li>Creating block comments <code>/** .... */</code></li>
+<li>Using block comments to add brief description to functions, classes, etc. <code>\brief</code></li>
+<li>Using block comments to add detailed description to functions, classes, etc. <code>\details</code> (optional)</li>
+<li>Using block comments to add description to files <code>\file</code></li>
+<li>Using inline comments to describe class members and variables, enum values etc. <code>/**&lt; ... */</code></li>
+<li>Adding function parameter description <code>@param</code></li>
+<li>Adding function return description <code>@return</code></li>
+<li>Adding "See also" links <code>@see</code></li>
+<li>Adding reference (links) to files <code>@ref</code></li>
+<li>Adding reference (links) to other classes/functions <code>#</code><ol type="a">
+<li>For classes and namespaces you don't need to add <code>#</code>, just type the class/namepsace (case-sensitive) and it will be linked automatically</li>
+</ol>
+</li>
+</ol>
+<p>Other additional features you might notice:</p><ol type="1">
+<li>Adding bullet-point and numbered lists <code>-</code> <code>-#</code></li>
+<li>Adding images <code>\image html</code></li>
+</ol>
+<p>IMPORTANT NOTES:</p><ol type="1">
+<li>Doxygen has many more features that are not mentioned here. Please note that code comments are not only used to generate documentation, but also to be read by IDE's Intellisense [^1] to make a better developing experience. For example, in VS Code:<ol type="a">
+<li><code>\brief</code> description appears when hovering over class/function name in VS Code, but not <code>\details</code>.</li>
+<li>Doxygen allows placing block comments anywhere not necessarily before the documented entity, but VS Code Intellisense doesn't understand this syntax.</li>
+</ol>
+</li>
+<li>Only header files (<code>.h</code>, <code>.hpp</code>) will be scanned. You do NOT have to document internal code functionality. Even in header files, you don't have to document private functions that wil be used internally. In general, you need to document functions and interfaces that would be used by other developers.</li>
+</ol>
+<p>[^1]: Make sure you have the right <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack">VS Code extensions</a> to have the functionality of Intellisense.</p>
+<h3><a class="anchor" id="autotoc_md7"></a>
+Modules and groups</h3>
+<p>Code entities can be grouped into modules (as you can see in the <code>Modules</code> section on the left pane). These modules are created by adding special-syntax block comments in code files. An example of this can be found in power-mgmt.hpp and sleep.hpp.</p>
+<p>To do that, you need to:</p>
+<p>Define the group <code>\defgoup</code> (See ) </p><pre class="fragment">/**
+* \defgroup group-id Module Name
+* \brief Brief description...
+* \details Detailed description...
+* @see @ref extra-documentation.md
+*/
+</pre><p> Encapsulate the entities that you want in the group with block comments </p><pre class="fragment">/**
+* \addtogroup group-id
+* @{
+*/
+
+/**
+* \brief Function description.
+*/
+void myFunction();
+
+/**
+* @}
+*/
+</pre><p> Now <code>myFunction</code> will appear under that module.</p>
+<p>Module's entities don't have to be in the same file. You can use <code>\addtogroup</code> anywhere.</p>
+<p>You can nest modules under other modules, just place the <code>\defgroup</code> definition of the submodule under <code>\addtogroup</code> brackets of the parent module.</p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Markdown support</h2>
+<p>It is good to keep the in-code comments to describe the classes, interfaces and functions. High-level description of the module can be placed in markdown (<code>.md</code>) files.</p>
+<p>To learn about markdown syntax checkout <a href="https://www.freecodecamp.org/news/markdown-cheatsheet/">this link</a> for some explanation, or try <a href="https://stackedit.io/">Stackedit</a> which is a web tool to write markdown files.</p>
+<p>In <code>.md</code> files you could add explanation of the module and provide examples.</p>
+<p><code>.md</code> files will show-up on the left pane as sections of their own, not under <code>Modules</code> sections.</p>
+<p>Just as in code comments, you can add links to classes and code entities by typing <code>#ClassName</code>, and you can add links to other documents <code>@ref filename.hpp</code>. </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

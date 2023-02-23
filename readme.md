@@ -1,3 +1,5 @@
+/** \mainpage
+
 # Welcome to Doxygen Demo
 
 This is a sample project to show how to use [Doxygen](https://www.doxygen.nl/) for code documentation.
@@ -96,5 +98,3 @@ In `.md` files you could add explanation of the module and provide examples.
 `.md` files will show-up on the left pane as sections of their own, not under `Modules` sections.
 
 Just as in code comments, you can add links to classes and code entities by typing `#ClassName`, and you can add links to other documents `@ref filename.hpp`.
-
-![Example image](Owl.jpg)
