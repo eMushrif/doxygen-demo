@@ -58,7 +58,8 @@ private:
 
 /**
  * \brief Registry of events
- * \details Store history of accident events \image html image2.jpg
+ * \details Store history of accident events
+ * \image html art.jpg
  */
 class AccidentEventRegistry
 {

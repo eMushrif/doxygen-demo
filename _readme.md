@@ -97,4 +97,4 @@ In `.md` files you could add explanation of the module and provide examples.
 
 Just as in code comments, you can add links to classes and code entities by typing `#ClassName`, and you can add links to other documents `@ref filename.hpp`.
 
-![Example image](WelcomeScan.jpg)
+![Example image](Owl.jpg)
