@@ -25,17 +25,18 @@
 var NAVTREE =
 [
   [ "My Doxygen demo", "index.html", [
-    [ "Welcome to Doxygen Demo", "index.html#autotoc_md4", [
-      [ "Generating documentation", "index.html#autotoc_md5", null ],
-      [ "Documenting the code", "index.html#autotoc_md6", [
-        [ "Modules and groups", "index.html#autotoc_md7", null ]
+    [ "Welcome to Doxygen Demo", "index.html#autotoc_md5", [
+      [ "Generating documentation", "index.html#autotoc_md6", null ],
+      [ "Documenting the code", "index.html#autotoc_md7", [
+        [ "Modules and groups", "index.html#autotoc_md8", null ]
       ] ],
-      [ "Markdown support", "index.html#autotoc_md8", null ]
+      [ "Markdown support", "index.html#autotoc_md9", null ]
     ] ],
+    [ "Power Management", "md_doc_power_mgmt.html", null ],
     [ "Vehicle Monitoring", "md_doc_vehicle_monitor.html", [
-      [ "Accident detection", "md_doc_vehicle_monitor.html#autotoc_md1", null ],
-      [ "Positioning", "md_doc_vehicle_monitor.html#autotoc_md2", null ],
-      [ "Vehicle diagnostics", "md_doc_vehicle_monitor.html#autotoc_md3", null ]
+      [ "Accident detection", "md_doc_vehicle_monitor.html#autotoc_md2", null ],
+      [ "Positioning", "md_doc_vehicle_monitor.html#autotoc_md3", null ],
+      [ "Vehicle diagnostics", "md_doc_vehicle_monitor.html#autotoc_md4", null ]
     ] ],
     [ "readme", "md_readme.html", null ],
     [ "Modules", "modules.html", "modules" ],

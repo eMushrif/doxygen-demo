@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme_0',['readme',['../md_readme.html',1,'']]]
+  ['power_20management_0',['Power Management',['../md_doc_power_mgmt.html',1,'']]]
 ];

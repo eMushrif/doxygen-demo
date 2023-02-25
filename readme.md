@@ -10,7 +10,7 @@ Doxygen is a tool to generate documentation viewable as webpage by extracting co
 
 Doxygen is an app that can be [installed](https://www.doxygen.nl/manual/install.html) on your device and it works by adding a configuration file (`Doxyfile`) in your project and running it using `doxygen -g` command to generate the documentation, or using [Doxywizard UI](https://www.doxygen.nl/manual/doxywizard_usage.html) that comes with the software.
 
-For this project, documentation is generated already, to view the webpage go to `/doc/html/index.html`. it would be a good idea to compare the script/code in the repository to see how script is translated into html documentation.
+For this project, documentation is generated already, to view the webpage go to `/doc/html/index.html`. it would be a good idea to compare the script in the repository under `src/` or the `.md` files under `doc/` to see how script is translated into html documentation.
 
 Feel free to play around with the script and `.md` files to see how it is reflected on documentation. If you make any changes, you need to regenerate the docs by using Doxywizard:
  -# Open Doxywizard
@@ -19,6 +19,8 @@ Feel free to play around with the script and `.md` files to see how it is reflec
  -# Go to Run tab and click "Run doxygen"
 
  Normally, you wouldn't have to manipulate Doxygen configurations or learn about them. But as a developer, you would need to learn the right syntax that would make your code comments syntax understandable for Doxygen and enables it to generate documentation.
+ 
+ On this webpage, documentation extracted from code files will show up under "Modules" section, while documentation extracted from markdown (.md) files will show up as a section on its own (e.g. @ref md_doc_vehicle_monitor)
 
 ## Documenting the code
 
@@ -97,4 +99,4 @@ In `.md` files you could add explanation of the module and provide examples.
 
 `.md` files will show-up on the left pane as sections of their own, not under `Modules` sections.
 
-Just as in code comments, you can add links to classes and code entities by typing `#ClassName`, and you can add links to other documents `@ref filename.hpp`.
+Just as in code comments, you can add links to classes and code entities by typing `#ClassName`, and you can add links to other code files `@ref filename.hpp`. If you want to add links to other .md documents you will need to do it differently. For example, to add a link to `vehicle-monitor.md` you need to type `@ref md_doc_vehicle_monitor` which includes `md_` prefix and the file's path (`doc/`).
