@@ -61,7 +61,7 @@ private:
  * \details Store history of accident events
  * \image html art.jpg
  */
-class AccidentEventRegistry
+class AccidentEventRegistry : public AccidentEvent
 {
 public:
 };
