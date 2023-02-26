@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['power_20management_0',['Power Management',['../md_doc_power_mgmt.html',1,'']]]
+  ['vehicle_20monitoring_0',['Vehicle Monitoring',['../md_doc_vehicle_monitor.html',1,'']]]
 ];

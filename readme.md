@@ -1,5 +1,3 @@
-/** \mainpage
-
 # Welcome to Doxygen Demo
 
 This is a sample project to show how to use [Doxygen](https://www.doxygen.nl/) for code documentation.

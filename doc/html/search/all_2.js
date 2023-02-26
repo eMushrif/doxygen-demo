@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['my_20doxygen_20demo_0',['My Doxygen demo',['../index.html',1,'']]]
+  ['power_20management_0',['Power Management',['../md_doc_power_mgmt.html',1,'']]]
 ];
