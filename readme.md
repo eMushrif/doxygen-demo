@@ -97,4 +97,21 @@ In `.md` files you could add explanation of the module and provide examples.
 
 `.md` files will show-up on the left pane as sections of their own, not under `Modules` sections.
 
-Just as in code comments, you can add links to classes and code entities by typing `#ClassName`, and you can add links to other code files `@ref filename.hpp`. If you want to add links to other .md documents you will need to do it differently. For example, to add a link to `vehicle-monitor.md` you need to type `@ref md_doc_vehicle_monitor` which includes `md_` prefix and the file's path (`doc/`).
+### Creating hierarchy of pages
+
+You can create hierarchy within a single `.md` file as you can see in @ref md_doc_pwr-mgmt. You can check `power-mgmt.md` and look for the following commands:
+
+- `\subpage` states that a page with specified id will be a subpage under the current page.
+- `\page` denotes the start of a page
+- `\section` denotes the start of a section within a page
+- `\subsection` and `\subsubsection` denote the start of subsections
+
+You can reach subpages and sections by browsing the tree on the sidebar or through links (refernces).
+
+You should use the commands above as alternatives to markdown headers. The advantage of doing that is that you can have links to pages and sections to which you can then create references using `@ref`.
+
+### Adding references to pages and classes
+
+Just as in code comments, you can add links to classes and code entities by typing `#ClassName`, and you can add links to other code files `@ref filename.hpp`.
+
+If you want to add links to other .md documents the best way is to navigate to use the page hierarchy described above, then use the page id or section id (`@ref pwr-consumption`).

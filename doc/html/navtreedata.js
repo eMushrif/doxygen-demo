@@ -26,11 +26,11 @@ var NAVTREE =
 [
   [ "My Doxygen demo", "index.html", [
     [ "Welcome to Doxygen Demo", "index.html", "index" ],
-    [ "Power Management", "md_doc_power_mgmt.html", null ],
+    [ "Power Management", "md_doc_power_mgmt.html", "md_doc_power_mgmt" ],
     [ "Vehicle Monitoring", "md_doc_vehicle_monitor.html", [
-      [ "Accident detection", "md_doc_vehicle_monitor.html#autotoc_md2", null ],
-      [ "Positioning", "md_doc_vehicle_monitor.html#autotoc_md3", null ],
-      [ "Vehicle diagnostics", "md_doc_vehicle_monitor.html#autotoc_md4", null ]
+      [ "Accident Detection", "md_doc_vehicle_monitor.html#accident", null ],
+      [ "Positioning", "md_doc_vehicle_monitor.html#positioning", null ],
+      [ "Vehicle Diagnostics", "md_doc_vehicle_monitor.html#diagnostics", null ]
     ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['power_20management_0',['Power Management',['../md_doc_power_mgmt.html',1,'']]]
+  ['expected_20power_20consumption_0',['Expected Power Consumption',['../pwr-consumption.html',1,'md_doc_power_mgmt']]]
 ];

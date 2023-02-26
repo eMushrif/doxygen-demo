@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['registerevent_0',['registerEvent',['../class_accident_event.html#a08180ffe5542c42b1b4e800663f8b1fb',1,'AccidentEvent']]]
+  ['power_20management_0',['Power Management',['../md_doc_power_mgmt.html',1,'']]],
+  ['power_20sources_20_26_20monitoring_1',['Power Sources &amp; Monitoring',['../pwr-mon.html',1,'md_doc_power_mgmt']]]
 ];
