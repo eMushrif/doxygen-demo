@@ -149,27 +149,23 @@ Documenting the code</h1>
 <li>Adding function return description <code>@return</code></li>
 <li>Adding "See also" links <code>@see</code></li>
 <li>Adding reference (links) to files <code>@ref</code></li>
-<li>Adding reference (links) to other classes/functions <code>#</code><ol type="a">
+<li>Adding reference (links) to other classes/functions <code>#</code></li>
 <li>For classes and namespaces you don't need to add <code>#</code>, just type the class/namepsace (case-sensitive) and it will be linked automatically</li>
-</ol>
-</li>
 </ol>
 <p>Other additional features you might notice:</p><ol type="1">
 <li>Adding bullet-point and numbered lists <code>-</code> <code>-#</code></li>
 <li>Adding images <code>\image html</code></li>
 </ol>
 <p>IMPORTANT NOTES:</p><ol type="1">
-<li>Doxygen has many more features that are not mentioned here. Please note that code comments are not only used to generate documentation, but also to be read by IDE's Intellisense [^1] to make a better developing experience. For example, in VS Code:<ol type="a">
+<li>Doxygen has many more features that are not mentioned here. Please note that code comments are not only used to generate documentation, but also to be read by IDE's Intellisense [^1] to make a better developing experience. For example, in VS Code:</li>
 <li><code>\brief</code> description appears when hovering over class/function name in VS Code, but not <code>\details</code>.</li>
-<li>Doxygen allows placing block comments anywhere not necessarily before the documented entity, but VS Code Intellisense doesn't understand this syntax.</li>
-</ol>
-</li>
+<li>Doxygen allows placing block comments anywhere not necessarily before the documented symbol, but VS Code Intellisense doesn't understand this syntax.</li>
 <li>Only header files (<code>.h</code>, <code>.hpp</code>) will be scanned. You do NOT have to document internal code functionality. Even in header files, you don't have to document private functions that wil be used internally. In general, you need to document functions and interfaces that would be used by other developers.</li>
 </ol>
 <p>[^1]: Make sure you have the right <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack">VS Code extensions</a> to have the functionality of Intellisense.</p>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Modules and groups</h2>
-<p>Code entities can be grouped into modules (as you can see in the <code>Modules</code> section on the left pane). These modules are created by adding special-syntax block comments in code files. An example of this can be found in power-mgmt.hpp and sleep.hpp.</p>
+<p>Code symbols can be grouped into modules (as you can see in the <code>Modules</code> section on the left pane). These modules are created by adding special-syntax block comments in code files. An example of this can be found in power-mgmt.hpp and sleep.hpp.</p>
 <p>To do that, you need to:</p>
 <p>Define the group <code>\defgoup</code> (See ) </p><pre class="fragment">/**
 * \defgroup group-id Module Name
@@ -177,7 +173,7 @@ Modules and groups</h2>
 * \details Detailed description...
 * @see @ref extra-documentation.md
 */
-</pre><p> Encapsulate the entities that you want in the group with block comments </p><pre class="fragment">/**
+</pre><p> Encapsulate the symbols that you want in the group with block comments </p><pre class="fragment">/**
 * \addtogroup group-id
 * @{
 */
@@ -191,7 +187,7 @@ void myFunction();
 * @}
 */
 </pre><p> Now <code>myFunction</code> will appear under that module.</p>
-<p>Module's entities don't have to be in the same file. You can use <code>\addtogroup</code> anywhere.</p>
+<p>Module's symbols don't have to be in the same file. You can use <code>\addtogroup</code> anywhere.</p>
 <p>You can nest modules under other modules, just place the <code>\defgroup</code> definition of the submodule under <code>\addtogroup</code> brackets of the parent module.</p>
 <h1><a class="anchor" id="autotoc_md4"></a>
 Markdown support</h1>
@@ -199,7 +195,7 @@ Markdown support</h1>
 <p>To learn about markdown syntax checkout <a href="https://www.freecodecamp.org/news/markdown-cheatsheet/">this link</a> for some explanation, or try <a href="https://stackedit.io/">Stackedit</a> which is a web tool to write markdown files.</p>
 <p>In <code>.md</code> files you could add explanation of the module and provide examples.</p>
 <p><code>.md</code> files will show-up on the left pane as sections of their own, not under <code>Modules</code> sections.</p>
-<p>You can highlight some pragraphs for important notices:</p>
+<p>You can highlight some paragraphs for important notices:</p>
 <dl class="section warning"><dt>Warning</dt><dd>This paragraph starts with \warning command.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This paragraph starts with \note command. You can also do this in the code files as well.</dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>This paragraph starts with \bug command.</dd></dl>
@@ -214,11 +210,12 @@ Creating hierarchy of pages</h2>
 <li><code>\section</code> denotes the start of a section within a page</li>
 <li><code>\subsection</code> and <code>\subsubsection</code> denote the start of subsections</li>
 </ul>
-<p>You can reach subpages and sections by browsing the tree on the sidebar or through links (refernces).</p>
+<p>You can reach subpages and sections by browsing the tree on the sidebar or through links (references).</p>
 <p>You should use the commands above as alternatives to markdown headers. The advantage of doing that is that you can have links to pages and sections to which you can then create references using <code>@ref</code>.</p>
 <h2><a class="anchor" id="autotoc_md6"></a>
 Adding references to pages and classes</h2>
-<p>Just as in code comments, you can add links to classes and code entities by typing <code>#ClassName</code>, and you can add links to other code files <code>@ref filename.hpp</code>.</p>
+<p>Just as in code comments, you can add links to classes and code symbols by typing <code>#ClassName</code>, and you can add links to other code files <code>@ref filename.hpp</code>.</p>
+<p>If you are working in a markdown file and trying to reference a symbol inside a namespace, just typing the class name wouldn't work. You need to define the full scope Namespace::ClassName::FunctionName. To make it neater for the reader (but harder for you) you can use <code>[FunctionName](\ref Namespace::ClassName::FunctionName)</code>.</p>
 <p>If you want to add links to other .md documents the best way is to navigate to use the page hierarchy described above, then use the page id or section id (<code>@ref pwr-consumption</code>). </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
