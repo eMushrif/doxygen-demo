@@ -32,6 +32,7 @@ var NAVTREE =
       [ "Positioning", "md_doc_vehicle_monitor.html#positioning", null ],
       [ "Vehicle Diagnostics", "md_doc_vehicle_monitor.html#diagnostics", null ]
     ] ],
+    [ "Bug List", "bug.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['expected_20power_20consumption_0',['Expected Power Consumption',['../pwr-consumption.html',1,'md_doc_power_mgmt']]]
+  ['count_0',['count',['../class_accident_event.html#a367419dfc0b4ea98e5f9a2a4f0c1724a',1,'AccidentEvent']]]
 ];

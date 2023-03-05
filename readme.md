@@ -97,6 +97,18 @@ In `.md` files you could add explanation of the module and provide examples.
 
 `.md` files will show-up on the left pane as sections of their own, not under `Modules` sections.
 
+You can highlight some pragraphs for important notices:
+
+\warning This paragraph starts with \\warning command.
+
+\note This paragraph starts with \\note command. You can also do this in the code files as well.
+
+\bug This paragraph starts with \\bug command.
+
+\attention This paragraph starts with \\attention command.
+
+\pre This paragraph starts with \\pre command.
+
 ### Creating hierarchy of pages
 
 You can create hierarchy within a single `.md` file as you can see in @ref md_doc_pwr-mgmt. You can check `power-mgmt.md` and look for the following commands:
