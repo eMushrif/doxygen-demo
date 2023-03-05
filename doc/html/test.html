@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Doxygen Awesome" />
 <meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
 <!-- END twitter metadata -->
-<title>My Doxygen demo: Accident Detection</title>
+<title>My Doxygen demo: Test List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -93,7 +93,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('accident.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('test.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -119,77 +119,14 @@ $(document).ready(function(){initNavTree('accident.html',''); initResizable(); }
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Accident Detection </div></div>
+  <div class="headertitle"><div class="title">Test List </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The accident detection feature is designed to automatically detect collisions and notify the relevant authorities in the event of an accident. Checkout <a class="el" href="class_accident_event.html" title="Triggers crash events.">AccidentEvent</a> class for information. See <a class="el" href="accident-detection_8hpp.html">accident-detection.hpp</a>. The following C++ code snippet demonstrates how to implement this feature: </p><pre class="fragment">#include &lt;iostream&gt;
-
-// Function to detect collisions
-bool detect_collision() {
-  // Logic to detect collisions
-  return true;
-}
-
-int main() {
-  if (detect_collision()) {
-    std::cout &lt;&lt; "Collision detected!" &lt;&lt; std::endl;
-    // Notify authorities
-  } else {
-    std::cout &lt;&lt; "No collisions detected." &lt;&lt; std::endl;
-  }
-
-  return 0;
-}
-</pre> <h2><a class="anchor" id="aa"></a>
-Positioning</h2>
-<h2><a class="anchor" id="autotoc_md0"></a>
-Positioning</h2>
-<p>The positioning feature uses GPS technology to determine the location of the vehicle. This information can be used for navigation, tracking, and other purposes. The following C++ code demonstrates how to retrieve the current GPS coordinates: </p><pre class="fragment">#include &lt;iostream&gt;
-
-// Function to retrieve GPS coordinates
-void get_gps_coordinates(double&amp; latitude, double&amp; longitude) {
-  // Retrieve GPS coordinates
-  latitude = 37.7749;
-  longitude = -122.4194;
-}
-
-int main() {
-  double latitude, longitude;
-  get_gps_coordinates(latitude, longitude);
-
-  std::cout &lt;&lt; "Latitude: " &lt;&lt; latitude &lt;&lt; std::endl;
-  std::cout &lt;&lt; "Longitude: " &lt;&lt; longitude &lt;&lt; std::endl;
-
-  return 0;
-}
-</pre> <h2><a class="anchor" id="autotoc_md1"></a>
-Vehicle diagnostics</h2>
-<p>The vehicle diagnostics feature is designed to monitor the performance of the vehicle and detect any potential issues. This information can be used for maintenance and repair purposes. The following C++ code demonstrates how to retrieve diagnostic information: </p><pre class="fragment">#include &lt;iostream&gt;
-#include &lt;vector&gt;
-
-// Function to retrieve diagnostic information
-std::vector&lt;double&gt; get_diagnostic_information() {
-  // Retrieve diagnostic information
-  std::vector&lt;double&gt; diagnostic_data = {0.5, 0.7, 0.9, 1.2};
-  return diagnostic_data;
-}
-
-int main() {
-  std::vector&lt;double&gt; diagnostic_data = get_diagnostic_information();
-
-  // Display diagnostic information
-  std::cout &lt;&lt; "Diagnostic information:" &lt;&lt; std::endl;
-  for (double data : diagnostic_data) {
-    std::cout &lt;&lt; "- " &lt;&lt; data &lt;&lt; std::endl;
-  }
-
-  return 0;
-}
-</pre><div class="image">
-<img src="Owl.jpg" alt=""/>
-<div class="caption">
-Example image</div></div>
-     </div></div><!-- contents -->
+<div class="textblock"><dl class="reflist">
+<dt>page <a class="el" href="index.html">Welcome to Doxygen Demo</a>  </dt>
+<dd><a class="anchor" id="_test000001"></a>This paragraph starts with \test command.</dd>
+</dl>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

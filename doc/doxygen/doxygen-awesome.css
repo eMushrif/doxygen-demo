@@ -272,8 +272,8 @@ html.dark-mode {
     --warning-color: #2e1917;
     --warning-color-dark: #ad2617;
     --warning-color-darker: #f5b1aa;
-    --note-color: #3b2e04;
-    --note-color-dark: #f1b602;
+    --note-color: #3b2e041c;
+    --note-color-dark: #f1b60294;
     --note-color-darker: #ceb670;
     --todo-color: #163750;
     --todo-color-dark: #1982D2;

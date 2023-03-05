@@ -97,7 +97,7 @@ In `.md` files you could add explanation of the module and provide examples.
 
 `.md` files will show-up on the left pane as sections of their own, not under `Modules` sections.
 
-You can highlight some paragraphs for important notices:
+You can format some paragraphs for important notices:
 
 \warning This paragraph starts with \\warning command.
 
@@ -108,6 +108,10 @@ You can highlight some paragraphs for important notices:
 \attention This paragraph starts with \\attention command.
 
 \pre This paragraph starts with \\pre command.
+
+\test This paragraph starts with \\test command.
+
+\remark This paragraph starts with \\remark command.
 
 ### Creating hierarchy of pages
 

@@ -33,6 +33,7 @@ var NAVTREE =
       [ "Vehicle Diagnostics", "md_doc_vehicle_monitor.html#diagnostics", null ]
     ] ],
     [ "Bug List", "bug.html", null ],
+    [ "Test List", "test.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
